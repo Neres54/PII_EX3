@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03 DOM</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- melhoria - contador simples de tarefas -->
+    <h1>Gerenciamento de Tarefas<small>(<span id="contador">0 tarefas</span>)</small></h1>
+        <div>
+            <label for="descricaoTarefa">Descrição da Tarefa:</label>
+            <input type="text" id="descricaoTarefa" placeholder="Ex: Concluir relatório">
+        </div>
+            <button id="adicionarBtn">Adicionar Tarefa</button>
+        <div class="contador-tarefas">
+        Total: <span id="totalTarefas">0</span> | 
+        Concluídas: <span id="tarefasConcluidas">0</span>
+        </div>
+            <table id="tabelaTarefas">
+            <thead>
+                <tr>
+                <th>ID</th>
+                <th>Descrição</th>
+                <th>Data de Início</th>
+                <th>Data de Conclusão</th>
+                <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas da tabela serão adicionadas aqui -->
+            </tbody>
+        </table>
+</body>
+</html>
